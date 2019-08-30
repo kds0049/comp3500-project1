@@ -1,0 +1,92 @@
+Script started on Mon 26 Aug 2019 09:35:43 AM CDT
+[?1034hbash-4.2$ man ls
+[?1049h[?1h=LS(1)                            User Commands                           LS(1)[m
+[m
+[1mNAME[0m[m
+       ls - list directory contents[m
+[m
+[1mSYNOPSIS[0m[m
+       [1mls[0m [[4mOPTION[24m]... [[4mFILE[24m]...[m
+[m
+[1mDESCRIPTION[0m[m
+       List  information  about  the FILEs (the current directory by default).[m
+       Sort entries alphabetically if none of [1m-cftuvSUX[0m nor [1m--sort[0m  is  speci‐[m
+       fied.[m
+[m
+       Mandatory  arguments  to  long  options are mandatory for short options[m
+       too.[m
+[m
+       [1m-a[0m, [1m--all[0m[m
+              do not ignore entries starting with .[m
+[m
+       [1m-A[0m, [1m--almost-all[0m[m
+              do not list implied . and ..[m
+[m
+       [1m--author[0m[m
+[7m Manual page ls(1) line 1 (press h for help or q to quit)[27m[K[K[?1l>[?1049lbash-4.2$ cd comp2710
+bash-4.2$ pwd
+/home/u2/kds0049/comp2710
+bash-4.2$ ls
+sample	sample.c
+bash-4.2$ mkdir exampleDirectory
+bash-4.2$ c[Kcd .[K[K.[K .[K[K ..
+bash-4.2$ cp sample.c exampleDirectory
+cp: cannot stat ‘sample.c’: No such file or directory
+bash-4.2$ ls
+commands.script  comp2710  ntuser.cmd
+bash-4.2$ cd comp2710
+bash-4.2$ cp sample.c exampleDirectory
+bash-4.2$ ls
+exampleDirectory  sample  sample.c
+bash-4.2$ mv campl[K[K[K[K[Ksample exampleDirectory
+bash-4.2$ ls
+exampleDirectory  sample.c
+bash-4.2$ re[Km sample.c
+bash-4.2$ ls
+exampleDirectory
+bash-4.2$ mkdir Delete[K[K[K[K[K[KdeleteThis
+bash-4.2$ rmdir Dele[K[K[K[KdeleteThis
+bash-4.2$ ls
+exampleDirectory
+bash-4.2$ cd exampleDirectory
+bash-4.2$ ls
+sample	sample.c
+bash-4.2$ chmod u=rwx, [Kg=rx,o=r m[Kc[Ksap[Kmple.c
+bash-4.2$ claer[K[K[Kear
+[3;J[H[2Jbash-4.2$ top
+[?1h=[?25l[H[2J(B[mtop - 09:43:11 up 9 days, 21:46,  5 users,  load average: 0.00, 0.01, 0.09(B[m[39;49m(B[m[39;49m[K
+Tasks:(B[m[39;49m[1m 384 (B[m[39;49mtotal,(B[m[39;49m[1m   1 (B[m[39;49mrunning,(B[m[39;49m[1m 383 (B[m[39;49msleeping,(B[m[39;49m[1m   0 (B[m[39;49mstopped,(B[m[39;49m[1m   0 (B[m[39;49mzombie(B[m[39;49m(B[m[39;49m[K
+%Cpu(s):(B[m[39;49m[1m  0.5 (B[m[39;49mus,(B[m[39;49m[1m  1.8 (B[m[39;49msy,(B[m[39;49m[1m  0.0 (B[m[39;49mni,(B[m[39;49m[1m 97.7 (B[m[39;49mid,(B[m[39;49m[1m  0.0 (B[m[39;49mwa,(B[m[39;49m[1m  0.0 (B[m[39;49mhi,(B[m[39;49m[1m  0.0 (B[m[39;49msi,(B[m[39;49m[1m  0.0 (B[m[39;49mst(B[m[39;49m(B[m[39;49m[K
+KiB Mem :(B[m[39;49m[1m 24509136 (B[m[39;49mtotal,(B[m[39;49m[1m 17064336 (B[m[39;49mfree,(B[m[39;49m[1m  3118572 (B[m[39;49mused,(B[m[39;49m[1m  4326228 (B[m[39;49mbuff/cache(B[m[39;49m(B[m[39;49m[K
+KiB Swap:(B[m[39;49m[1m 12386300 (B[m[39;49mtotal,(B[m[39;49m[1m 12386300 (B[m[39;49mfree,(B[m[39;49m[1m        0 (B[m[39;49mused.(B[m[39;49m[1m 20831940 (B[m[39;49mavail Mem (B[m[39;49m(B[m[39;49m[K
+[K
+[7m  PID USER      PR  NI    VIRT    RES    SHR S  %CPU %MEM     TIME+ COMMAND     (B[m[39;49m[K
+(B[m[1m 5998 kds0049   20   0  168628   2596   1664 R   9.1  0.0   0:00.08 top         (B[m[39;49m[K
+(B[m   10 root      20   0       0      0      0 S   4.5  0.0  20:37.59 rcu_sched   (B[m[39;49m[K
+(B[m    1 root      20   0  194328   7500   4188 S   0.0  0.0   4:44.67 systemd     (B[m[39;49m[K
+(B[m    2 root      20   0       0      0      0 S   0.0  0.0   0:01.15 kthreadd    (B[m[39;49m[K
+(B[m    3 root      20   0       0      0      0 S   0.0  0.0   0:01.84 ksoftirqd/0 (B[m[39;49m[K
+(B[m    5 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/0:+ (B[m[39;49m[K
+(B[m    8 root      rt   0       0      0      0 S   0.0  0.0   0:01.45 migration/0 (B[m[39;49m[K
+(B[m    9 root      20   0       0      0      0 S   0.0  0.0   0:00.00 rcu_bh      (B[m[39;49m[K
+(B[m   11 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 lru-add-dr+ (B[m[39;49m[K
+(B[m   12 root      rt   0       0      0      0 S   0.0  0.0   0:07.15 watchdog/0  (B[m[39;49m[K
+(B[m   13 root      rt   0       0      0      0 S   0.0  0.0   0:02.44 watchdog/1  (B[m[39;49m[K
+(B[m   14 root      rt   0       0      0      0 S   0.0  0.0   0:01.33 migration/1 (B[m[39;49m[K
+(B[m   15 root      20   0       0      0      0 S   0.0  0.0   0:14.03 ksoftirqd/1 (B[m[39;49m[K
+(B[m   17 root       0 -20       0      0      0 S   0.0  0.0   0:00.00 kworker/1:+ (B[m[39;49m[K
+(B[m   19 root      rt   0       0      0      0 S   0.0  0.0   0:02.24 watchdog/2  (B[m[39;49m[K
+(B[m   20 root      rt   0       0      0      0 S   0.0  0.0   0:01.69 migration/2 (B[m[39;49m[K
+(B[m   21 root      20   0       0      0      0 S   0.0  0.0   0:14.77 ksoftirqd/2 (B[m[39;49m[K[?1l>[25;1H
+[?12l[?25h[Kbash-4.2$ who [K
+tmw0029  pts/0        2019-08-25 15:51 (ettin.eng.auburn.edu)
+xzj0004  pts/1        2019-08-17 09:12 (:1)
+mhp0009  pts/2        2019-08-26 09:05 (ettin.eng.auburn.edu)
+kds0049  pts/3        2019-08-26 09:27 (ettin.eng.auburn.edu)
+kds0049  pts/4        2019-08-26 09:35
+bash-4.2$ nproc
+16
+bash-4.2$ exit
+exit
+
+Script done on Mon 26 Aug 2019 09:43:43 AM CDT
